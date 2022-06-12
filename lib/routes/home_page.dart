@@ -3,6 +3,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:spesotaskapp/const.dart';
 import 'package:spesotaskapp/extension/asset_path.dart';
 
+import '../components/bottom_nav.dart';
 import '../resources/assets_name.dart';
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -23,7 +24,7 @@ class _HomePageState extends State<HomePage> {
   elevation:0,
   title: const Text('Services',style: TextStyle(color: Colors.black),)
 
-,        actions: [Icon(Icons.settings,color: Colors.black,),SizedBox(width:30)]
+,        actions:const  [Icon(Icons.settings,color: Colors.black,),SizedBox(width:30)]
 
         ,),
 
@@ -42,7 +43,7 @@ class _HomePageState extends State<HomePage> {
 
                 Container(height: 170,
                   width:screenSize(context).width ,
-                  margin: EdgeInsets.only(left:20,right:20,),
+                  margin:const  EdgeInsets.only(left:20,right:20,),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(8),
 
@@ -145,6 +146,8 @@ gradient: LinearGradient(colors: [Colors.deepPurple,Colors.blue.shade900,Colors.
     );
   }
 
+
+  //creating a widget method for the quick access service button
   Column servicesHolder(String iconUrl,String title,{Color color=Colors.blue}) {
     return Column(children: [
               CircleAvatar(

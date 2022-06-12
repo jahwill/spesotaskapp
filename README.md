@@ -1,6 +1,6 @@
 # spesotaskapp
 
-a services app built with flutter framework
+a services app built with flutter framework  which is a UI test task from Speso
 
 ## Getting Started
 
